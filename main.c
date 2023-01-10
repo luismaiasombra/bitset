@@ -21,8 +21,9 @@ int main(){
    	y = 0;
     i = 0;
 
-    while (1) { //loop de inser��o do bit
-            printf("insira um numero qualquer. Insira -1 para finalizar");
+    while (1) { 
+	    //this loop inserts the bits
+            printf("Insert any number you want. Type -1 to end\n");
         scanf("%d",&y);
         if (y==-1) {
             break;
@@ -32,7 +33,7 @@ int main(){
         x[y/32]=x[y/32]|(1<<(y%32));
 
     }
-    //the following double loop reads the bits. 
+    //the following double loop prints the bits. 
     //it transforms (i,j) into 32*i+j
     for (i=0;i<200;i++) {
         for (j=0;j<32;j++) {
